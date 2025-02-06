@@ -1,0 +1,242 @@
+@media (max-width: 84em) {
+  .testimonials-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
+    max-width: 115rem;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56%;
+  }
+
+  nav {
+    gap: 3.6rem;
+  }
+
+  .container {
+    max-width: 110rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .cta-heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+}
+
+@media (max-width: 40em) {
+  /*************************/
+  /********GENERAL**********/
+  /*************************/
+
+  .container {
+    max-width: 38rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  /*************************/
+  /*********NAV************/
+  /*************************/
+
+  header {
+    padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+    position: relative;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    /* Hide the element */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav a {
+    font-size: 2.4rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-mobile-button {
+    cursor: pointer;
+    border: none;
+    background-color: #fdf2e9;
+    display: block;
+  }
+
+  .nav-mobile-button-close {
+    display: none;
+  }
+
+  .nav-open .nav-mobile-button-close {
+    display: block;
+  }
+
+  .nav-mobile-button-list {
+    display: block;
+  }
+
+  .nav-open .nav-mobile-button-list {
+    display: none;
+  }
+
+  /*************************/
+  /*********HERO************/
+  /*************************/
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .eat-well-and-learn-more-wrapper {
+    justify-content: space-between;
+  }
+
+  /*************************/
+  /*******FEATURED IN*******/
+  /*************************/
+  .logos img {
+    height: 1.2rem;
+  }
+
+  /*************************/
+  /*******HOW IT WORKS******/
+  /*************************/
+  .how-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0;
+  }
+
+  .how-img-wrapper:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .how-img-wrapper:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .how-desc {
+    margin-bottom: 4.8rem;
+  }
+
+  /*************************/
+  /*********MEALS***********/
+  /*************************/
+  .meals-wrapper {
+    grid-template-columns: 1fr;
+    gap: 5.6rem;
+  }
+
+  /*************************/
+  /*******TESTIMONIALS******/
+  /*************************/
+
+  .testimonials-section {
+    padding: 0;
+  }
+
+  .testimonials-wrapper {
+    grid-template-columns: 1fr;
+    padding: 9.6rem 2.4rem 2.4rem 2.4rem;
+    gap: 4.8rem;
+  }
+
+  .testimonials-left-wrappper {
+    margin: 0 0 0 0;
+  }
+
+  .customers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /*************************/
+  /*******    PRICING ******/
+  /*************************/
+
+  .pricing-horizontal-wrapper {
+    flex-direction: column;
+  }
+
+  .pricing-perks-b {
+    flex-direction: column;
+    margin-bottom: 9.6rem;
+  }
+
+  /*************************/
+  /*******    CTA    ******/
+  /*************************/
+  .cta-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img {
+    grid-row-start: 1;
+  }
+
+  /***************************/
+  /***     FOOTER          ****/
+  /***************************/
+  .footer-section {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+}
