@@ -1,10 +1,10 @@
-const closeButton = document.getElementsByClassName(
-  "nav-mobile-button-close"
-)[0];
-const listButton = document.getElementsByClassName("nav-mobile-button-list")[0];
+const mobileNavClose = document.querySelector(".nav-mobile-button-close");
+const listButton = document.querySelector(".nav-mobile-button-list");
+const mobileNavHeader = document.querySelector(".header");
 
-closeButton.addEventListener("click", function (event) {});
-
+mobileNavClose.addEventListener("click", function () {
+  mobileNavHeader.classList.toggle("nav-open");
+});
 listButton.addEventListener("click", function (event) {
-  console.log("list");
+  mobileNavHeader.classList.toggle("nav-open");
 });
