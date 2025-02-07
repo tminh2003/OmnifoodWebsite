@@ -42,11 +42,11 @@
         <img class="main-logo" src="img/omnifood-logo.png" />
       </a>
       <nav class = "main-nav ">
-        <a href="#">How it works</a>
-        <a href="#">Meals</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Pricing</a>
-        <a href="#" class="nav-cta">Try for free</a>
+        <a href="#how">How it works</a>
+        <a href="#meals">Meals</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="nav-cta">Try for free</a>
       </nav>
       <button class="nav-mobile-button nav-mobile-button-list">
         <ion-icon name="list-outline" class="nav-mobile-icon"></ion-icon>
@@ -56,7 +56,7 @@
       </button>
       </header>
 
-    <section class="hero-section">
+    <section class="hero-section" id="hero">
       <div class="hero-wrapper container">
         <div class="hero-text">
           <h1>A healthy meal delivered to your door, every single day</h1>
@@ -66,8 +66,8 @@
             needs.
           </p>
           <div class="eat-well-and-learn-more-wrapper">
-            <a class="btn btn_main" href="#">Start eating well</a>
-            <a class="btn" href="#">Learn more &darr;</a>
+            <a class="btn btn_main" href="#cta">Start eating well</a>
+            <a class="btn" href="#how">Learn more &darr;</a>
           </div>
           <div class="delivered-meals">
             <div class="delivered-imgs">
@@ -97,7 +97,7 @@
         <img src="img/logos/usa-today.png" />
       </div>
     </section>
-    <section class="how-section container">
+    <section class="how-section container" id="how">
       <p class="subheading">How it works</p>
       <h2 class="heading-secondary">
         Your daily dose of health in 3 simple steps
@@ -147,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section class="meals-section container">
+    <section class="meals-section container" id="meals">
       <p class="subheading">MEALS</p>
       <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
       <div class="meals-wrapper">
@@ -237,7 +237,7 @@
       </div>
       <a href="#" class="see-all-recipes">See all recipes &rarr;</a>
     </section>
-    <section class="testimonials-section">
+    <section class="testimonials-section" id="testimonials">
       <div class="testimonials-wrapper">
         <div class="testimonials-left-wrapper">
           <p class="subheading">Testimonials</p>
@@ -306,7 +306,7 @@
     </div>
       
     </section>
-    <section class="pricing-section container">
+    <section class="pricing-section container" id="pricing"">
       <div class="subheading">PRICING</div>
       <h2 class="heading-secondary">Eating well without breaking the bank</h2>
       <div class="pricing-horizontal-wrapper">
@@ -386,7 +386,7 @@
         </div>
       </div>
     </section>
-    <section class="cta-section container">
+    <section class="cta-section container" id="cta">
       <div class="cta-left-wrapper">
         <div class="cta-text">
           <h2 class="cta-heading-secondary">Get your first meal for free!</h2>
@@ -475,6 +475,10 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
     <script defer src="js/script.js"></script>
   </body>
