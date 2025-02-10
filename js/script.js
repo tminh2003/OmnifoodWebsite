@@ -3,7 +3,6 @@ const listButton = document.querySelector(".nav-mobile-button-list");
 const mobileNavHeader = document.querySelector(".header");
 const allLinks = document.querySelectorAll("a:link");
 const allNavLinks = document.querySelectorAll(".main-nav a");
-
 console.log(allNavLinks);
 
 mobileNavClose.addEventListener("click", function () {
@@ -32,3 +31,24 @@ allNavLinks.forEach((link) => {
     mobileNavHeader.classList.toggle("nav-open");
   });
 });
+
+const obs = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    console.log(ent);
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+const heroSection = document.querySelector(".hero-section");
+console.log;
+obs.observe(heroSection);
